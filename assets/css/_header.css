@@ -1,0 +1,63 @@
+.header-section{
+	position: relative;
+	z-index: 2;
+	background: transparent;
+}
+.header-innr{
+	display: flex;
+	align-items: center;
+	background: transparent;
+	padding-top: 43px;
+	padding-bottom: 43px;
+}
+.header-logo{
+	max-width: 25%;
+	width: 100%;
+	float: left;
+}
+.header-logo a{
+	display: inline-block;
+	font-family: 'Playfair Display', serif;
+	font-weight: 500;
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.header-nav{
+	max-width: 75%;
+	width: 100%;
+	float: right;
+	padding-right: 25px;
+	text-align: right;
+}
+.header-nav > ul >li{
+	list-style: none;
+}
+.header-nav > ul > li >a{
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #fff;
+	padding-left: 18px;
+	padding-right: 18px;
+	transition: 0.3s all ease-out 0s;
+	-webkit-transition: 0.3s all ease-out 0s;
+	-moz-transition: 0.3s all ease-out 0s;
+}
+.header-nav > ul > li >a:first-child{
+	padding-left: 0;
+}
+.header-nav > ul > li >a:last-child{
+	padding-right: 0;
+}
+.header-nav > ul > li >a:hover{
+	background: transparent;
+	color: #DFCE74;
+	transition: 0.3s all ease-out 0s;
+	-webkit-transition: 0.3s all ease-out 0s;
+	-moz-transition: 0.3s all ease-out 0s;
+}

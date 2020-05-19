@@ -1,0 +1,24 @@
+h1,h2,h3,h4,h5,h6{
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	line-height: 1.2;
+}
+h1{
+	font-size: 100px;
+}
+h2{
+	font-size: ;
+}
+h3{
+	font-size: 70px;
+}
+h4{
+	font-size: ;
+}
+h5{
+	font-size: ;
+}
+h6{
+	font-size: ;
+}

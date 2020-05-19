@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-size: 16px;
+	font-family: 'Cabin', sans-serif; 
+	font-weight: 400;
+	line-height: 26px;
+	color: #8b8b8b;
+	text-align: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.clearfix:after,
+.clearfix:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+.ulc{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	transition: 0.3s all ease-out 0s;
+	-webkit-transition: 0.3s all ease-out 0s;
+	-ms-transition: 0.3s all ease-out 0s;
+}
+a:hover{
+	transition: 0.3s all ease-out 0s;
+	-webkit-transition: 0.3s all ease-out 0s;
+	-ms-transition: 0.3s all ease-out 0s;
+}
+.container{
+	max-width: 1050px;
+	width: 100%;
+	margin: 0 auto;
+}
+.plr{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+p{
+	margin-bottom: 0;
+}
