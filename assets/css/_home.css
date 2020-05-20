@@ -1,6 +1,6 @@
 .banner-section{
 	display: block;
-	min-height: 680px;
+	position: relative;
 }
 .bg-banner{
 	position: absolute;
@@ -14,25 +14,82 @@
 	background-repeat: no-repeat;
 	display: inline-block;
 }
+.banner-innr{
+	padding: 234px 0 203px 0;
+}
 .banner-innr h1{
 	color: #fff;
 	font-size: 100px;
+	line-height: 100px;
 	text-transform: uppercase;
 	font-weight: 400;
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 2px;
+	margin-bottom: 0;
 }
-.banner-innr >h2{
+.banner-innr .to-text > h2{
 	color: #DFCE75;
 	font-size: 80px;
+	line-height: 70px;
 	text-transform: none;
 	font-weight: 400;
 	font-family: 'Dancing Script', cursive;
-	padding-left: 270px;
-	padding-right: 270px;
+	margin-bottom: 0;
 	display: inline-block;
+	margin-bottom: 5px;
+	max-width: 100%;
+	width: 100%;
 }
 .to-text{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	max-width: 670px;
+	width: 100%;
+	margin: auto;
+	position: relative;
+}
+.bgr-btm-lft{
+    position: absolute;
+    max-width: 39%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 6px;
+    left: 0;
+    border: 0.05px solid #dfce74;
+}
+.bgr-top-lft{
+    position: absolute;
+    max-width: 39%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0px;
+    left: 0;
+    border: 0.05px solid #dfce74;
+}
+.bgr-btm-rtt{
+    position: absolute;
+    max-width: 39%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 6px;
+    right: 0;
+    border: 0.05px solid #dfce74;
+}
+.bgr-top-rtt{
+    position: absolute;
+    max-width: 39%;
+    width: 100%;
+    top: 50%;
+    margin-top: 0px;
+    transform: translateY(-50%);
+    right: 0;
+    border: 0.05px solid #dfce74;
+}
+/* .to-text{
 	position: relative;
 }
 .to-text:after{
@@ -56,31 +113,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 2;	
-}
-.to-text:after{
-	content: "";
-	position: absolute;
-	height: 1px;
-	width: 267px;
-	background: #DFCE75;
-	right: -33px;
-	top: 50%;
-	margin-top: 10px;
-	transform: translateY(-50%);
-	z-index: 2;
-}
-.to-text:before{
-	content: "";
-	position: absolute;
-	height: 1px;
-	width: 267px;
-	background: #DFCE75;
-	left: -33px;
-	top: 50%;
-	margin-top: 10px;
-	transform: translateY(-50%);
-	z-index: 2;	
-}
+} */
 .about-us-hedding{
 	padding-top: 70px;
 	padding-bottom: 30px;
@@ -124,11 +157,15 @@
 .about-us-img{
 	max-width: 67.2%;
 	width: 100%;
+	min-height: 450px;
 }
 .about-us-dec{
 	max-width: 32.8%;
 	width: 100%;
 	padding-left: 25px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
 }
 .about-us-dec p:nth-child(1){
 	padding-bottom: 25px;
