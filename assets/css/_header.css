@@ -64,3 +64,137 @@
 	-webkit-transition: 0.3s all ease-out 0s;
 	-moz-transition: 0.3s all ease-out 0s;
 }
+.hdr-mobile-menu{
+	max-width: 75%;
+	width: 100%;
+	float: right;
+	padding-right: 25px;
+	text-align: right;
+	display: none;
+}
+.humbargar-menu{
+	float: right;
+	position: relative;
+	background: transparent;
+	height: 20px;
+	width: 27px;
+	cursor: pointer;
+}
+.humbargar-menu span:nth-child(1){
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+}
+.humbargar-menu span:nth-child(2){
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	top: 8px;
+	left: 0;
+	right: 0;
+	background: #fff;
+}
+.humbargar-menu span:nth-child(3){
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	top: 16px;
+	left: 0;
+	right: 0;
+	background: #fff;
+} 
+.js-humbargar-menu span:nth-child(1){
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	top: 8px;
+	left: 0;
+	right: 0;
+	background: #fff;
+	transform: rotate(45deg);
+}
+.js-humbargar-menu span:nth-child(2){
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	top: 8px;
+	left: 0;
+	right: 0;
+	background: #fff;
+	transform: rotate(-45deg);
+}
+.js-humbargar-menu span:nth-child(3){
+	display: none;
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	top: 16px;
+	left: 0;
+	right: 0;
+	background: #fff;
+}
+.menu-nav{
+	width: 120px;
+	float: right;
+	text-align: left;
+	display: none;
+}
+.js-menu-nav{
+	display: block;
+}
+.menu-nav > ul >li{
+	list-style: none;
+}
+.menu-nav > ul > li >a{
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 5px 25px 5px 25px;
+	transition: 0.3s all ease-out 0s;
+	-webkit-transition: 0.3s all ease-out 0s;
+	-moz-transition: 0.3s all ease-out 0s;
+}
+.menu-nav > ul > li >a:hover{
+	background: transparent;
+	color: #DFCE74;
+	transition: 0.3s all ease-out 0s;
+	-webkit-transition: 0.3s all ease-out 0s;
+	-moz-transition: 0.3s all ease-out 0s;
+}
+@media(max-width: 767px){
+	.header-innr{
+		display: block;
+	}
+	.header-logo{
+		max-width: 50%;
+		width: 100%;
+	}
+	.header-nav{
+		display: none;
+	}
+	.hdr-mobile-menu{
+		display: block;
+		max-width: 50%;
+		width: 100%;
+		padding-top: 6px;
+	}
+}
+@media(max-width: 575px){
+	.header-logo a{
+		font-size: 22px;
+	}
+}

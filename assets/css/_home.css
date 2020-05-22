@@ -89,31 +89,6 @@
     right: 0;
     border: 0.05px solid #dfce74;
 }
-/* .to-text{
-	position: relative;
-}
-.to-text:after{
-	content: "";
-	position: absolute;
-	height: 1px;
-	width: 267px;
-	background: #DFCE75;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 2;
-}
-.to-text:before{
-	content: "";
-	position: absolute;
-	height: 1px;
-	width: 267px;
-	background: #DFCE75;
-	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 2;	
-} */
 .about-us-hedding{
 	padding-top: 70px;
 	padding-bottom: 30px;
@@ -155,6 +130,8 @@
 	padding-bottom: 92px;
 }
 .about-us-img{
+	display: flex;
+	align-items: center;
 	max-width: 67.2%;
 	width: 100%;
 	min-height: 450px;
@@ -248,8 +225,6 @@
 	font-weight: 500;
 	font-family: 'Cabin', sans-serif;
 	font-size: 20px;
-	/* position: relative;	
-	padding-right: 277px; */
 	text-transform: uppercase;
 }
 .items-border{
@@ -260,16 +235,6 @@
 .items-border p{
 	border-bottom: 1px solid #fff;
 }
-/* .items-name p:after{
-	content: "";
-	position: absolute;
-	width: 250px;
-	height: 1px;
-	background: #FFFFFF;
-	top: 50%;
-	right: 13px;
-	transform: translateY(-50%);
-} */
 .items-prize{
 	text-align: right;
 }
@@ -467,12 +432,17 @@
 	text-decoration: none;
 	display: inline-block;
 }
+.eassy-contact-mail{
+	display: flex;
+	align-items: baseline;
+}
 .eassy-contact-mail a{
 	color: #DFCE74;
 	font-weight: 400;
 	font-size: 35px;
 	position: relative;
 	padding-left: 15px;
+	line-height: 1;
 }
 .eassy-contact-mail i{
     transform: rotate(90deg);
@@ -482,6 +452,8 @@
 }
 .eassy-contact-address{
 	padding-top: 10px;
+	display: flex;
+	align-items: baseline;
 }
 .eassy-contact-address a{
 	color: #181627;
@@ -540,6 +512,23 @@
 }
 .footer-top-section-hedding{
 	text-align: center;
+	display: flex;
+	align-items: center;
+	max-width: 560px;
+	width: 100%;
+	margin: auto;
+}
+.footer-top-bdr-lft{
+    max-width: 17%;
+    width: 100%;
+    margin-top: 6px;
+    border: 0.05px solid #dfce74;
+}
+.footer-top-bdr-right{
+    max-width: 17%;
+    width: 100%;
+    margin-top: 6px;
+    border: 0.05px solid #dfce74;
 }
 .footer-top-section-hedding h2{
 	position: relative;
@@ -549,28 +538,8 @@
     color: #DFCE75;
     font-size: 72px;
     margin-bottom: 0;
-    padding: 0 117px;
     margin-bottom: 25px;
-}
-.footer-top-section-hedding h2:after{
-	position: absolute;
-	content: "";
-	height: 1px;
-	width: 100px;
-	background: #DFCE74;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-}
-.footer-top-section-hedding h2:before{
-	position: absolute;
-	content: "";
-	height: 1px;
-	width: 100px;
-	background: #DFCE74;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);	
+    margin: auto;
 }
 .footer-top-section-hedding-dec{
 
@@ -590,4 +559,94 @@
 .footer-innr p{
 	color: #fff;
 	padding: 21px 0 15px 0;
+}
+@media(max-width: 991px){
+	.banner-innr h1{
+		line-height: 85px!important;
+		font-size: 80px!important;
+	}
+	h2{
+		font-size: 70px!important;
+	}
+	h3{
+		font-size: 55px!important;
+	}
+	.about-us-hedding-dec{
+		margin-bottom: 20px;
+	}
+	.contact-dec{
+		padding-right: 25px;
+	}
+}
+@media(max-width: 767px){
+	.about-us-innr{
+		display: block;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+	.about-us-img{
+		display: inline-block;
+	    text-align: center;
+	    max-width: 100%;
+	    min-height: auto;
+	}
+	.about-us-dec{
+		max-width: 100%;
+		padding-left: 0;
+		padding-top: 20px;
+	}
+	.gallery-section-four{
+		padding-bottom: 40px;
+	}
+	.gallery-hedding {
+	    padding-top: 50px;
+	    padding-bottom: 44px;
+	}
+	.gallery-innr{
+		padding: 0 0;
+	}
+	.contact-innr{
+		padding-top: 20px;
+	}
+	.contact-dec{
+	    max-width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 20px;
+	    text-align: center;
+	}
+}
+@media(max-width: 575px){
+	.banner-innr h1{
+		font-size: 50px!important;
+		line-height: 60px!important;
+	}
+	h2{
+		font-size: 60px!important;
+	}
+	h3{
+		font-size: 40px!important;
+	}
+	.contact-section{
+		padding-bottom: 30px;
+	}
+	.gallery-innr > ul >li{
+		max-width: 33.33%;
+	}
+	.contact-form-wrap{
+		max-width: 100%;
+	}
+}
+@media(max-width: 479px){
+	.contact-innr{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media(max-width: 359px){
+	.open-time p{
+		font-size: 14px;
+	}
+	.open-time span{
+		font-size: 14px;		
+	}
 }
