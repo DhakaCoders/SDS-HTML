@@ -13,6 +13,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	display: inline-block;
+	min-height: 650px;
 }
 .banner-innr{
 	padding: 234px 0 203px 0;
@@ -122,6 +123,7 @@
 .about-us-hedding-dec p{
 	font-size: 18px;
 	font-weight: 300;
+	margin-bottom: 0;
 }
 .about-us-innr{
 	padding-right: 25px;
@@ -144,6 +146,9 @@
 	padding-bottom: 50px;
 
 }
+.about-us-dec p{
+	margin-bottom: 0;
+}
 .about-us-dec p:nth-child(1){
 	padding-bottom: 25px;
 }
@@ -162,13 +167,7 @@
 	text-align: center;
 }
 .menu-section-hedding h2{
-	line-height: 1.1;
     max-width: 700px;
-    font-weight: 400;
-    font-family: 'Dancing Script', cursive;
-    color: #DFCE75;
-    font-size: 72px;
-    margin-bottom: 0;
     border-bottom: 1px solid #DFCE74;
     margin: auto;
 }
@@ -192,6 +191,7 @@
 	font-size: 18px;
 	font-weight: 300;
 	color: #fff;
+	margin-bottom: 0;
 }
 .menu-items{
 }
@@ -203,11 +203,11 @@
 .menu-items > ul >li:nth-child(2n+1){
 	float: left;
 	padding-left: 22px;
-	padding-right: 15px;
+	padding-right: 34px;
 }
 .menu-items > ul >li:nth-child(2n+2){
 	float: right;
-	padding-left: 15px;
+	padding-left: 34px;
 	padding-right: 22px;
 }
 .menu-items{
@@ -216,6 +216,7 @@
 .items-name-prize{
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 .items-name{
 	text-align: left;
@@ -246,6 +247,7 @@
 }
 .menu-items-dec p{
 	color: #fff;
+	margin-bottom: 0;
 }
 .gallery-section-four{
 	padding-bottom: 85px;
@@ -256,13 +258,7 @@
 	text-align: center;
 }
 .gallery-hedding h2{
-	line-height: 1.1;
     max-width: 552px;
-    font-weight: 400;
-    font-family: 'Dancing Script', cursive;
-    color: #DFCE75;
-    font-size: 72px;
-    margin-bottom: 0;
     border-bottom: 1px solid #DFCE74;
     margin: auto;
 }
@@ -305,12 +301,7 @@
 	text-align: center;
 }
 .contact-top-section-hedding h2{
-	line-height: 1.1;
     max-width: 488px;
-    font-weight: 400;
-    font-family: 'Dancing Script', cursive;
-    color: #DFCE75;
-    font-size: 72px;
     margin-bottom: 0;
     border-bottom: 1px solid #DFCE74;
     margin: auto;
@@ -333,6 +324,7 @@
 	font-size: 18px;
 	font-weight: 300;
 	color: #fff;
+	margin-bottom: 0;
 }
 .contact-section{
 	background: #F9F9F9;
@@ -365,6 +357,7 @@
 	max-width: 100%;
 	width: 100%; 
 	border: none;
+	color: #9A9A9A;
 	outline: 0;
 }
 .contact-form input{
@@ -377,6 +370,7 @@
 	border:1px solid #e8e8e8;
 	min-height: 128px;
 	padding-left: 15px;
+	padding-top: 10px;
 }
 .contact-form button{
 	text-transform: uppercase;
@@ -423,7 +417,7 @@
 	margin-bottom: 30px;
 }
 .contact-dec-hedding p{
-
+	margin-bottom: 0;
 }
 .eassy-contact{
 	padding: 25px 0 65px 0;
@@ -484,6 +478,7 @@
 	font-weight: 600;
 	padding-right: 15px;
 	color: #5d5d5d;
+	margin-bottom: 0;
 }
 .open-hour-time span{
 	color: #9A9A9A;
@@ -493,6 +488,8 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	max-width: 100%;
+	width: 100%;
 	min-height: 390px;
 }
 .footer-top-section{
@@ -521,23 +518,16 @@
 .footer-top-bdr-lft{
     max-width: 17%;
     width: 100%;
-    margin-top: 6px;
     border: 0.05px solid #dfce74;
 }
 .footer-top-bdr-right{
     max-width: 17%;
     width: 100%;
-    margin-top: 6px;
     border: 0.05px solid #dfce74;
 }
 .footer-top-section-hedding h2{
 	position: relative;
 	display: inline-block;
-    font-weight: 400;
-    font-family: 'Dancing Script', cursive;
-    color: #DFCE75;
-    font-size: 72px;
-    margin-bottom: 0;
     margin-bottom: 25px;
     margin: auto;
 }
@@ -559,6 +549,12 @@
 .footer-innr p{
 	color: #fff;
 	padding: 21px 0 15px 0;
+	margin-bottom: 0;
+}
+@media(min-height: 650px){
+	.bg-banner{
+		min-height: 1vh;
+	}
 }
 @media(max-width: 991px){
 	.banner-innr h1{

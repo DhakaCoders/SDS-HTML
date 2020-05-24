@@ -8,7 +8,12 @@ h1{
 	font-size: 100px;
 }
 h2{
-	font-size: ;
+	font-size: 72px;
+	color: #DFCE75;
+	font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+    line-height: 1.1;
+    margin-bottom: 0;
 }
 h3{
 	font-size: 70px;
