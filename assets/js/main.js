@@ -16,8 +16,9 @@ $(document).ready(function(){
 				$('body').removeClass('hasSticky');
 			}
 	});
-	$('a .fencibox').fancybox({
-	    'width': 750,
-	    'autoSize': false
-	});
+	 $('.testimonial-slider').slick({
+        autoplaySpeed: 3000,
+        arrows: false,
+        autoplay: true
+      });
 });
