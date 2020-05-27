@@ -18,18 +18,6 @@
     align-items: center;
     justify-content: center;	
 }
-.bg-banner{
-	position: absolute;
-	background: url('../images/banner.jpg');
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	display: inline-block;
-}
 .banner-innr{
 	padding: 234px 0 203px 0;
 }
@@ -219,6 +207,7 @@
 	float: left;
 	padding-left: 22px;
 	padding-right: 34px;
+	clear: left;
 }
 .menu-items > ul >li:nth-child(2n+2){
 	float: right;
@@ -294,6 +283,9 @@
 	width: 100%;
 	float: left;
 	padding:0 7.5px 15px 7.5px;
+}
+.gallery-innr > ul >li:nth-child(4n+1){
+	clear: left;
 }
 .contact-top-section{
 	background: url('../images/sec-five-bg-img-001.jpg');
@@ -498,8 +490,7 @@
 .open-hour-time span{
 	color: #9A9A9A;
 }
-.map-section{
-	background: url('../images/map.small-img.jpg');
+.map-section iframe{
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -590,6 +581,30 @@
 	}
 }
 @media(max-width: 767px){
+	.menu-section-hedding-dec{
+		margin-bottom: 50px;
+	}
+	.menu-items > ul >li{
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.items-name-prize{
+		justify-content: center;
+	}
+	.menu-items > ul >li:nth-child(2n+2){
+		padding: 0;
+	}
+	.menu-items > ul >li:nth-child(2n+1){
+		padding: 0;
+	}
+	.items-name p,
+	.items-prize p{
+		margin-bottom: 0;
+	}
+	.menu-items-dec p{
+		line-height: 1;
+	}
 	.about-us-innr{
 		display: block;
 		padding-right: 0;
@@ -642,6 +657,12 @@
 	}
 	.gallery-innr > ul >li{
 		max-width: 33.33%;
+	}
+	.gallery-innr > ul >li:nth-child(4n+1){
+		clear: initial;
+	}
+	.gallery-innr > ul >li:nth-child(3n+1){
+		clear: left;
 	}
 	.contact-form-wrap{
 		max-width: 100%;

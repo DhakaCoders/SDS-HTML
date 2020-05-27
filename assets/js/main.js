@@ -7,12 +7,17 @@ $(document).ready(function(){
 	$('.contact-match-height').matchHeight();
 
 	$(window).scroll(function(){
-	  var scroll = $(window).scrollTop();
-	  if (scroll >= 10)
-	  	$('body').addClass('hasSticky');
-	  else 
-	  	$('body').removeClass('hasSticky');
+		var sticky = $('header.header-section');
+			scroll = $(window).scrollTop();
+			if (scroll >= 10) {
+				$('body').addClass('hasSticky');
+			}
+			else{
+				$('body').removeClass('hasSticky');
+			}
 	});
-
-
+	$('a .fencibox').fancybox({
+	    'width': 750,
+	    'autoSize': false
+	});
 });
