@@ -170,6 +170,23 @@
 	-webkit-transition: 0.3s all ease-out 0s;
 	-moz-transition: 0.3s all ease-out 0s;
 }
+.header-section,
+.header-innr{
+	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hasSticky .header-section{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+}
+.hasSticky .header-section .header-innr{
+	padding: 20px 0;
+}
+.hasSticky .header-nav{
+	padding-top: 3px;
+}
 @media(max-width: 767px){
 	.header-innr{
 		display: block;
