@@ -1,13 +1,19 @@
 .banner-section{
 	display: block;
-	background: url('../images/banner.jpg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
+	position: relative;
 	height: 100vh;
+	-ms-display: flex;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: flex;
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.banner-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;	
 }
 .banner-innr{
 	padding: 234px 0 203px 0;
@@ -198,6 +204,7 @@
 	float: left;
 	padding-left: 22px;
 	padding-right: 34px;
+	clear: left;
 }
 .menu-items > ul >li:nth-child(2n+2){
 	float: right;
@@ -273,6 +280,9 @@
 	width: 100%;
 	float: left;
 	padding:0 7.5px 15px 7.5px;
+}
+.gallery-innr > ul >li:nth-child(4n+1){
+	clear: left;
 }
 .contact-top-section{
 	background: url('../images/sec-five-bg-img-001.jpg');
@@ -569,6 +579,30 @@
 	}
 }
 @media(max-width: 767px){
+	.menu-section-hedding-dec{
+		margin-bottom: 50px;
+	}
+	.menu-items > ul >li{
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.items-name-prize{
+		justify-content: center;
+	}
+	.menu-items > ul >li:nth-child(2n+2){
+		padding: 0;
+	}
+	.menu-items > ul >li:nth-child(2n+1){
+		padding: 0;
+	}
+	.items-name p,
+	.items-prize p{
+		margin-bottom: 0;
+	}
+	.menu-items-dec p{
+		line-height: 1;
+	}
 	.about-us-innr{
 		display: block;
 		padding-right: 0;
@@ -621,6 +655,12 @@
 	}
 	.gallery-innr > ul >li{
 		max-width: 33.33%;
+	}
+	.gallery-innr > ul >li:nth-child(4n+1){
+		clear: initial;
+	}
+	.gallery-innr > ul >li:nth-child(3n+1){
+		clear: left;
 	}
 	.contact-form-wrap{
 		max-width: 100%;

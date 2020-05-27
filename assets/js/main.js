@@ -5,6 +5,7 @@ $(document).ready(function(){
 	});
 	$('.match-height').matchHeight();
 	$('.contact-match-height').matchHeight();
+
 	$(window).scroll(function(){
 		var sticky = $('header.header-section');
 			scroll = $(window).scrollTop();
