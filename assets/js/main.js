@@ -5,4 +5,14 @@ $(document).ready(function(){
 	});
 	$('.match-height').matchHeight();
 	$('.contact-match-height').matchHeight();
+	$(window).scroll(function(){
+		var sticky = $('header.header-section');
+			scroll = $(window).scrollTop();
+			if (scroll >= 10) {
+				$('body').addClass('hasSticky');
+			}
+			else{
+				$('body').removeClass('hasSticky');
+			}
+	});
 });

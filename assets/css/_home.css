@@ -1,19 +1,13 @@
 .banner-section{
 	display: block;
-	position: relative;
-}
-.bg-banner{
-	position: absolute;
 	background: url('../images/banner.jpg');
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	display: inline-block;
-	min-height: 650px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .banner-innr{
 	padding: 234px 0 203px 0;
@@ -551,9 +545,9 @@
 	padding: 21px 0 15px 0;
 	margin-bottom: 0;
 }
-@media(min-height: 650px){
-	.bg-banner{
-		min-height: 1vh;
+@media(max-height: 650px){
+	.banner-section{
+		height: 650px;
 	}
 }
 @media(max-width: 991px){

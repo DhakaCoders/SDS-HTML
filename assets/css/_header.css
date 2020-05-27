@@ -170,6 +170,21 @@
 	-webkit-transition: 0.3s all ease-out 0s;
 	-moz-transition: 0.3s all ease-out 0s;
 }
+.header-section,
+.header-innr{
+	transition: 0.3s all ease-out 0s;
+}
+.hasSticky .header-section{
+	position: fixed;
+	background: #828282;
+}
+.hasSticky .header-innr {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.hasSticky .header-nav{
+	padding-top: 3px;
+}
 @media(max-width: 767px){
 	.header-innr{
 		display: block;
