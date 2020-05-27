@@ -16,4 +16,8 @@ $(document).ready(function(){
 				$('body').removeClass('hasSticky');
 			}
 	});
+	$('a .fencibox').fancybox({
+	    'width': 750,
+	    'autoSize': false
+	});
 });

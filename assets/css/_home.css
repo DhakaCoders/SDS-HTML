@@ -487,8 +487,7 @@
 .open-hour-time span{
 	color: #9A9A9A;
 }
-.map-section{
-	background: url('../images/map.small-img.jpg');
+.map-section iframe{
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
