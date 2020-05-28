@@ -75,6 +75,9 @@
 	height: 20px;
 	width: 27px;
 	cursor: pointer;
+	transition: 0.3s all ease-out 0s;
+    -moz-transition: 0.3s all ease-out 0s;
+    -webkit-transition: 0.3s all ease-out 0s;
 }
 .humbargar-menu span:nth-child(1){
 	content: "";
@@ -154,9 +157,7 @@
     float: none;
     width: 100%;
     background: #000;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -171,7 +172,7 @@
 	font-size: 17px;
 	text-transform: uppercase;
 	color: #fff;
-	padding: 5px 25px 5px 25px;
+	padding: 5px 0 5px 0;
 	transition: 0.3s all ease-out 0s;
 	-webkit-transition: 0.3s all ease-out 0s;
 	-moz-transition: 0.3s all ease-out 0s;
@@ -187,10 +188,6 @@
 .header-innr{
 	transition: 0.3s all ease-out 0s;
 }
-.hasSticky .header-section{
-	position: fixed;
-	background: #828282;
-}
 .hasSticky .header-innr {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -201,7 +198,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	background: #000;
+	background: #828282;
 }
 .hasSticky .header-section .header-innr{
 	padding: 20px 0;
@@ -226,11 +223,13 @@
 		width: 100%;
 		padding-top: 6px;
 	}
-	.humbargar-menu{
+	.hasSticky .humbargar-menu{
 	    position: fixed;
-	    top: 18px;
-	    right: 18px;
+	    right: 41px;
 	    z-index: 2;
+	    transition: 0.3s all ease-out 0s;
+	    -moz-transition: 0.3s all ease-out 0s;
+	    -webkit-transition: 0.3s all ease-out 0s;
 	}
 }
 @media(max-width: 575px){

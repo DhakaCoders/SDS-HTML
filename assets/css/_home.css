@@ -1,8 +1,5 @@
+
 .banner-section{
-	display: block;
-	position: relative;
-}
-.mainSlider .msItem{
 	position: relative;
     background: url(../images/banner.jpg);
     background-size: cover;
@@ -10,7 +7,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     -ms-display: flex;
-    display: flex;
+    -webkit-display: flex;
     display: flex;
 }
 .banner-section .container{
@@ -278,6 +275,10 @@
 .gallery-innr{
 	padding: 0 25px;
 }
+.gallery-innr > ul{
+	margin-left: -7.5px;
+	margin-right: -7.5px;
+}
 .gallery-innr > ul >li{
 	max-width: 25%;
 	width: 100%;
@@ -491,10 +492,7 @@
 	color: #9A9A9A;
 }
 .map-section iframe{
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	max-width: 100%;
+	vertical-align: bottom;
 	width: 100%;
 	min-height: 390px;
 }
@@ -512,6 +510,9 @@
 	font-weight: 300;
 	font-size: 22px;
 	color: #d6c670;
+}
+.slick-initialized .slick-slide{
+	outline: none;
 }
 .footer-top-section-hedding{
 	text-align: center;
@@ -666,6 +667,12 @@
 	}
 	.contact-form-wrap{
 		max-width: 100%;
+	}
+	.footer-top-section-hedding-dec{
+		padding-top: 15px;
+	}
+	.footer-top-section-hedding-dec p{
+		font-size: 18px;
 	}
 }
 @media(max-width: 479px){
